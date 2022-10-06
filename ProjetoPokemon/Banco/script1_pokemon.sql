@@ -50,4 +50,5 @@ INSERT INTO Pokemon VALUES (null, 'Moltres', 5, 90, 100, 90, 90, 2.0, 60.0, 'Fog
 INSERT INTO Pokemon VALUES (null, 'Mewtwo', 5, 106, 110, 90, 130, 2.0, 122.0, 'Psiquico', null);
 INSERT INTO Pokemon VALUES (null, 'Mew', 5, 100, 100, 100, 100, 0.4, 4.0, 'Psiquico', null);
 
-SELECT * FROM pokemon
+SELECT * FROM pokemon;
+SELECT * FROM Jogador

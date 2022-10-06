@@ -7,6 +7,7 @@ package poke.dao;
 import poke.Conector.Conector;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import poke.Model.JogadorModel;
 
@@ -36,6 +37,28 @@ public class JogadorDAO {
         
         return (rowsInserted > 0);
         
+    }
+     
+     public String checkLogin(String nome, String senha) throws SQLException{
+        String check = "";
+        
+        String sql = "SELECT * FROM Jogador WHERE usuario = ? AND senha = ?";
+        
+        PreparedStatement statement = connection.prepareStatement(sql);
+        
+        statement.setString(1, nome);
+        statement.setString(2, senha);
+        
+        ResultSet result = statement.executeQuery();
+        
+        if (result.next()){
+            
+            check = result.getString(2);
+            
+        }
+    
+        return check;
+    
     }
       
     
