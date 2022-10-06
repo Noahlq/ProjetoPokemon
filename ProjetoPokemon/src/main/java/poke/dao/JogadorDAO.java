@@ -25,7 +25,7 @@ public class JogadorDAO {
     
      public boolean inserirJogador(JogadorModel jogador) throws SQLException{
         
-        String sql = "INSERT INTO cliente (usuario, senha) VALUES(?,?)";
+        String sql = "INSERT INTO Jogador (usuario, senha) VALUES(?,?)";
         
         PreparedStatement statement = connection.prepareStatement(sql);
         
