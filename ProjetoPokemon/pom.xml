@@ -18,5 +18,15 @@
             <artifactId>mysql-connector-java-8.0.30</artifactId>
             <version>8.0.30</version>
         </dependency>
+        <dependency>
+            <groupId>Synthetica</groupId>
+            <artifactId>Synthetica</artifactId>
+            <version>3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>SyntheticaDark</groupId>
+            <artifactId>SyntheticaDark</artifactId>
+            <version>3.0</version>
+        </dependency>
     </dependencies>
 </project>
