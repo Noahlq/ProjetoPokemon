@@ -12,8 +12,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.UIManager.LookAndFeelInfo;
 import poke.Model.JogadorModel;
-import de.javasoft.plaf.synthetica.*;
-import de.javasoft.synthetica.dark.SyntheticaDarkLookAndFeel;
 import java.text.ParseException;
 
 /**
@@ -217,7 +215,8 @@ public class Login extends javax.swing.JFrame {
      */
     public static void main(String args[]) throws ParseException, UnsupportedLookAndFeelException {
         
-        try {
+        
+        /*try {
             UIManager.setLookAndFeel("de.javasoft.synthetica.dark.SyntheticaDarkLookAndFeel");
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
@@ -251,7 +250,7 @@ public class Login extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new Runnable() {
+        java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
                     new Login().setVisible(true);

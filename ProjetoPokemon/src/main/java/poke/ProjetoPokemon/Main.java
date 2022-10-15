@@ -5,6 +5,10 @@
 
 package poke.ProjetoPokemon;
 
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author NoahRohrbach
@@ -12,6 +16,16 @@ package poke.ProjetoPokemon;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        java.awt.EventQueue.invokeLater(() -> new Runnable() {
+            public void run() {
+
+                try {
+                    new Login().setVisible(true);
+                } catch (SQLException ex) {
+                    Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+                }
+               
+            }
+        });
     }
 }

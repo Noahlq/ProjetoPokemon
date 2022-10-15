@@ -11,11 +11,20 @@ package poke.Model;
 public class PokemonModel {
     
     String nome_p, tipo_p, tipo2_p;
-    int nivel_p, vida_p, ataque_p, velocidade_p;         
+    int id_p, nivel_p, vida_p, ataque_p, velocidade_p;         
     float peso_p, tamanho_p;
     
-    public PokemonModel(String nome_p, String tipo_p, String tipo2_p, int nivel_p, int vida_p, int ataque_p, int velocidade_p, float peso_p, float tamanho_p){
+    public PokemonModel(){}
+    
+    public PokemonModel(String nome_p){
+    
+        this.nome_p = nome_p;
         
+    }
+    
+    public PokemonModel(String nome_p, String tipo_p, String tipo2_p,int id_p, int nivel_p, int vida_p, int ataque_p, int velocidade_p, float peso_p, float tamanho_p){
+        
+        this.id_p = id_p;
         this.nome_p = nome_p;
         this.tipo_p = tipo_p;
         this.tipo2_p = tipo2_p;
@@ -27,6 +36,15 @@ public class PokemonModel {
         this.tamanho_p = tamanho_p;
           
     }
+    
+    public int getId_p() {
+        return id_p;
+    }
+    
+    public void setId_p(int id_p) {
+        this.id_p = id_p;
+    }
+
 
     public String getNome_p() {
         return nome_p;

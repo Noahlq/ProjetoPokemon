@@ -14,19 +14,9 @@
     <name>ProjetoPokemon</name>
     <dependencies>
         <dependency>
-            <groupId>mysql-connector-java-8.0.30</groupId>
-            <artifactId>mysql-connector-java-8.0.30</artifactId>
-            <version>8.0.30</version>
-        </dependency>
-        <dependency>
-            <groupId>Synthetica</groupId>
-            <artifactId>Synthetica</artifactId>
-            <version>3.0</version>
-        </dependency>
-        <dependency>
-            <groupId>SyntheticaDark</groupId>
-            <artifactId>SyntheticaDark</artifactId>
-            <version>3.0</version>
+            <groupId>mysql-connector-java-8.0.29</groupId>
+            <artifactId>mysql-connector-java-8.0.29</artifactId>
+            <version>8.0.29</version>
         </dependency>
     </dependencies>
 </project>
