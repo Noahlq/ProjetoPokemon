@@ -16,7 +16,7 @@ public class Conector {
     
     static String urlBD = "jdbc:mysql://localhost:3306/projetopokemon";
     static String username = "root";
-    static String password = "ma38815600";
+    static String password = "";
     
     public static Connection getConnection() throws SQLException{
         
